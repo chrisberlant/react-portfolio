@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--background: 220 23% 95%;
+		--foreground: 234 16% 35%;
+		--muted: 220 12% 90%;
+		--muted-foreground: 220 12% 30%;
+		--popover: 220 23% 92%;
+		--popover-foreground: 234 16% 25%;
+		--card: 220 23% 93%;
+		--card-foreground: 234 16% 30%;
+		--border: 220 13% 90%;
+		--input: 220 13% 87%;
+		--primary: 222.2 47.4% 11.2%;
+		--primary-foreground: 0 0% 100%;
+		--secondary: 266 30% 75%;
+		--secondary-foreground: 266 30% 15%;
+		--accent: 0 0% 85%;
+		--accent-foreground: 0 0% 25%;
+		--destructive: 3 87% 37%;
+		--destructive-foreground: 3 87% 97%;
+		--ring: 266 85% 58%;
+		--radius: 0.5rem;
+		--full-stack: 266 85% 58%;
+		--front-end: 220 91% 54%;
+		--back-end: 347 87% 44%;
+	}
+
+	.dark {
+		--background: 240 21% 15%;
+		--foreground: 226 64% 88%;
+		--muted: 240 12% 19%;
+		--muted-foreground: 240 12% 69%;
+		--popover: 240 21% 12%;
+		--popover-foreground: 226 64% 98%;
+		--card: 240 21% 13%;
+		--card-foreground: 226 64% 93%;
+		--border: 240 11% 20%;
+		--input: 240 11% 23%;
+		--primary: 0 0% 90%;
+		--primary-foreground: 222.2 47.4% 11.2%;
+		--secondary: 267 30% 25%;
+		--secondary-foreground: 267 30% 85%;
+		--accent: 240 21% 30%;
+		--accent-foreground: 240 21% 90%;
+		--destructive: 8 96% 56%;
+		--destructive-foreground: 0 0% 100%;
+		--ring: 267 84% 81%;
+	}
+
+	body {
+		@apply min-h-screen pt-8 pb-4 bg-background text-foreground;
+	}
+
+	#root {
+		@apply flex flex-col px-3 sm:px-4 lg:px-8 min-w-full;
+	}
+}
+
+@layer utilities {
+	.animation-delay-1000 {
+		animation-delay: 1s;
+	}
+	.animation-delay-2000 {
+		animation-delay: 2s;
+	}
+}
